@@ -3163,7 +3163,7 @@ var htmx = (function() {
       const fragment = makeFragment(cached.content)
       const historyElement = getHistoryElement()
       const settleInfo = makeSettleInfo(historyElement)
-      handleTitle(fragment.title)
+      handleTitle(cached.title)
       swapInnerHTML(historyElement, fragment, settleInfo)
       settleImmediately(settleInfo.tasks)
       getWindow().setTimeout(function() {
